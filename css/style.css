@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  height: 650px;
+}
+
+.wrapper {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 25em;
+  height: 40em;
+  background-color: bisque;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  font-size: 1.5em;
+  top: 5%;
+}
+
+.task {
+  position: absolute;
+  bottom: 5%;
+  width: 60%;
+  left: 10%;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.addB {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 100;
+  padding: 0px;
+  margin: 0px;
+
+  overflow: hidden;
+
+  color: rgb(0, 0, 0);
+
+  bottom: 5%;
+  right: 10%;
+
+  cursor: pointer;
+}
+
+.todos {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  color: black;
+  padding: 5px 0px 5px 9px;
+}
+
+.item {
+  list-style: none;
+  position: relative;
+  margin: 5px;
+}
+
+.item:hover {
+  border-bottom: 1px solid black;
+  /* border-top: 1px solid black; */
+}
+
+.remove {
+  position: absolute;
+
+  width: 15px;
+  height: 15px;
+
+  text-align: center;
+
+  transform: translate(0, -20px);
+
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0px;
+  margin: 0px;
+
+  overflow: hidden;
+
+  color: rgb(0, 0, 0);
+
+  right: 0px;
+
+  cursor: pointer;
+}
