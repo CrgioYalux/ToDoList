@@ -74,8 +74,13 @@ body {
   top: 15%;
   left: 10%;
   width: 80%;
+  height: 70%;
   color: black;
   padding: 5px 0px 5px 9px;
+  user-select: none;
+
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .item {
@@ -111,4 +116,24 @@ body {
   right: 0px;
 
   cursor: pointer;
+}
+
+/* scrollbar */
+.todos::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.todos::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+.todos::-webkit-scrollbar-thumb {
+  background: rgb(99, 99, 99);
+}
+
+/* Handle on hover */
+.todos::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 0);
 }
